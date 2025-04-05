@@ -1,0 +1,23 @@
+#! /usr/bin/python
+
+from os import get_terminal_size
+
+descriptions = []
+
+descriptions.append(
+    "organize_photos\n\nUsage:\n  organize_photos <directory of photos>"
+)
+
+if __name__ == "__main__":
+    cols = get_terminal_size().columns
+
+    print("=" * cols)
+    print("Overview of scripts:")
+    print("=" * cols)
+
+    for description in descriptions:
+        print()
+        print("-" * cols)
+        print(description)
+        print("-" * cols)
+        print()
