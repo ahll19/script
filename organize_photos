@@ -29,9 +29,9 @@ def get_earliest_tiems(files: list[str]) -> list[dt.datetime]:
 
 
 def move_files(files: list[str], times: list[dt.datetime]):
-    q1 = "1-3"
-    q2 = "4-6"
-    q3 = "7-9"
+    q1 = "01-03"
+    q2 = "04-06"
+    q3 = "07-09"
     q4 = "10-12"
     n = len(files)
     assert len(times) == len(files)
